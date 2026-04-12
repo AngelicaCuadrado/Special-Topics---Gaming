@@ -1,6 +1,10 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public enum GrowthStage
 {
     Seed,
@@ -23,6 +27,8 @@ public class TomatoPlant : MonoBehaviour
     public GameObject[] models;
 
     private GrowthStage previousStage;
+
+    [SerializeField] private GameObject tomatoFruitPrefab;
 
     void Start()
     {
@@ -74,5 +80,42 @@ public class TomatoPlant : MonoBehaviour
 
         // Enable the correct one
         models[(int)growthStage].SetActive(true);
+    }
+
+    public void Harvest(XRBaseInteractor interactor)
+    {
+        if (growthStage != GrowthStage.Ripe) return;
+
+        // Spawn fruit at hand position
+        GameObject fruit = Instantiate(
+            tomatoFruitPrefab,
+            interactor.transform.position,
+            interactor.transform.rotation
+        );
+
+        XRGrabInteractable grab = fruit.GetComponent<XRGrabInteractable>();
+
+        if (grab != null)
+        {
+            StartCoroutine(AttachNextFrame(interactor, grab));
+        }
+
+        // Destroy AFTER scheduling grab
+        Destroy(gameObject);
+    }
+
+    private IEnumerator AttachNextFrame(XRBaseInteractor interactor, XRGrabInteractable grab)
+    {
+        yield return null; // wait one frame
+
+        var manager = grab.interactionManager;
+
+        if (manager != null)
+        {
+            manager.SelectEnter(
+                (IXRSelectInteractor)interactor,
+                (IXRSelectInteractable)grab
+            );
+        }
     }
 }

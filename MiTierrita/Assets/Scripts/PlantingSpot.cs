@@ -14,10 +14,4 @@ public class PlantingSpot : MonoBehaviour
             currentPlant = newPLant.GetComponent<TomatoPlant>();
         }
     }
-
-    public void Harvest() 
-    {
-        Destroy(currentPlant.gameObject);
-        currentPlant = null;
-    }
 }
