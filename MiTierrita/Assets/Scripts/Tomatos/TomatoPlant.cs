@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public enum GrowthStage
@@ -21,6 +19,8 @@ public class TomatoPlant : MonoBehaviour
     [SerializeField] private float growthRate = 5f;      // growth per second
 
     public GrowthStage growthStage;
+
+    public bool IsRipeEnough => growthStage >= GrowthStage.Sapling;
 
     [Header("Models (Order matters)")]
     // 0 = Seed, 1 = Sprout, 2 = Sapling, 3 = Green, 4 = Ripe
@@ -116,6 +116,17 @@ public class TomatoPlant : MonoBehaviour
                 (IXRSelectInteractor)interactor,
                 (IXRSelectInteractable)grab
             );
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        CaterpillarAgent agent = other.GetComponent<CaterpillarAgent>();
+
+        if (agent != null && growthStage >= GrowthStage.Sapling)
+        {
+            agent.AddReward(1.0f); // reward for eating
+            Destroy(gameObject);
         }
     }
 }
