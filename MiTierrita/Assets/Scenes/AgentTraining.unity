@@ -716,10 +716,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1265147968557052439, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
+      propertyPath: m_BehaviorName
+      value: CaterpillarAgent
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265147968557052439, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4252504439501221246, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 714519642}
+    - target: {fileID: 4339832166995688196, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6800638625184929751, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: m_Name
       value: TempCaterpillar
