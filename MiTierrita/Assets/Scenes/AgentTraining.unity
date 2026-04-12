@@ -660,9 +660,17 @@ PrefabInstance:
       value: TempPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 1467882666028145470, guid: 9a8f513431e35ba4e84b46e4c16e1d2e, type: 3}
+      propertyPath: moveSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467882666028145470, guid: 9a8f513431e35ba4e84b46e4c16e1d2e, type: 3}
       propertyPath: targetAgent
       value: 
       objectReference: {fileID: 1355233214}
+    - target: {fileID: 1467882666028145470, guid: 9a8f513431e35ba4e84b46e4c16e1d2e, type: 3}
+      propertyPath: chaseDistance
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8076902954673102787, guid: 9a8f513431e35ba4e84b46e4c16e1d2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
