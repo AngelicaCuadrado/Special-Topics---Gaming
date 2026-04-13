@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public enum GrowthStage
@@ -27,8 +28,34 @@ public class TomatoPlant : MonoBehaviour
     public GameObject[] models;
 
     private GrowthStage previousStage;
+    private XRSimpleInteractable interactable;
 
     [SerializeField] private GameObject tomatoFruitPrefab;
+
+    private void Awake()
+    {
+        interactable = GetComponent<XRSimpleInteractable>();
+    }
+
+    private void OnEnable()
+    {
+        interactable.selectEntered.AddListener(OnInteract);
+    }
+
+    private void OnDisable()
+    {
+        interactable.selectEntered.RemoveListener(OnInteract);
+    }
+
+    private void OnInteract(SelectEnterEventArgs args)
+    {
+        XRBaseInteractor interactor = args.interactorObject as XRBaseInteractor;
+
+        if(interactor != null)
+        {
+            Harvest(interactor);
+        }
+    }
 
     void Start()
     {
