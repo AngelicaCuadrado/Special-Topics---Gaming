@@ -7,20 +7,10 @@ public class PlantingSpot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("⚠️ ¡Algo entró en la tierra! Objeto: " + other.gameObject.name + " | Tag: " + other.tag);
-
-        if (other.CompareTag("Seed"))
+        if (other.CompareTag("Seed") && currentPlant == null)
         {
-            if (currentPlant == null)
-            {
-                Debug.Log("🌱 ¡Semilla correcta detectada! Plantando...");
-                Destroy(other.gameObject);
-                Plant();
-            }
-            else
-            {
-                Debug.Log("❌ Cayó una semilla, pero YA HAY una planta aquí.");
-            }
+            Destroy(other.gameObject);
+            Plant();
         }
     }
 
