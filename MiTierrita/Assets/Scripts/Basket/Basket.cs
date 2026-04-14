@@ -34,12 +34,20 @@ public class Basket : MonoBehaviour
             {
                 fillStages[currentTomatoCount].SetActive(true);
                 currentTomatoCount += droppedFruit.value;
-
                 Destroy(other.gameObject);
-
                 if (currentTomatoCount >= maxTomatoes)
                 {
-                    if (basketGrab != null) basketGrab.enabled = true;
+                    Rigidbody rbPadre = GetComponentInParent<Rigidbody>();
+                    if (rbPadre != null)
+                    {
+                        rbPadre.isKinematic = false;
+                    }
+
+                    if (basketGrab != null)
+                    {
+                        basketGrab.enabled = true;
+                    }
+
                     Debug.Log("Basket full! You can now pick it up.");
                 }
             }

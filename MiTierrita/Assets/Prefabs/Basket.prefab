@@ -369,7 +369,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747533678349670517}
-  - component: {fileID: 8432471543861643}
   m_Layer: 0
   m_Name: Tomato_02_1
   m_TagString: Untagged
@@ -394,29 +393,6 @@ Transform:
   - {fileID: 6560869298905997135}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &8432471543861643
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 747533678349632597}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2756496494081295553}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5451799762491944900}
-  m_Enabled: 1
 --- !u!1 &931040714922094494
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +402,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 931040714922193854}
-  - component: {fileID: 480064619340364352}
   m_Layer: 0
   m_Name: Tomato_02_4
   m_TagString: Untagged
@@ -451,29 +426,6 @@ Transform:
   - {fileID: 6753322112963736708}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &480064619340364352
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931040714922094494}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2374935801917337354}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5556548639894307855}
-  m_Enabled: 1
 --- !u!1 &935877012066161235
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +525,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1252528544677097937}
-  - component: {fileID: 1955636126095833135}
   m_Layer: 0
   m_Name: Tomato_02_2
   m_TagString: Untagged
@@ -598,29 +549,6 @@ Transform:
   - {fileID: 4625977633507735275}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &1955636126095833135
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252528544677129713}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4431312290322378085}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5806981635996616288}
-  m_Enabled: 1
 --- !u!1 &1495569410818465736
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +648,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1521269677938394260}
-  - component: {fileID: 2260404681681948010}
   m_Layer: 0
   m_Name: Tomato_01_1
   m_TagString: Untagged
@@ -745,29 +672,6 @@ Transform:
   - {fileID: 4922298607219360686}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &2260404681681948010
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521269677937973428}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4107966385968666656}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6119206220485047077}
-  m_Enabled: 1
 --- !u!1 &1686911983739993223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1706,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3574691653650123072}
-  - component: {fileID: 4312737311541526718}
   m_Layer: 0
   m_Name: Tomato_05_4
   m_TagString: Untagged
@@ -1827,29 +1730,6 @@ Transform:
   - {fileID: 6974102371861007994}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &4312737311541526718
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3574691653649765728}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2127128394010301940}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8101043387451768561}
-  m_Enabled: 1
 --- !u!1 &3694131678204876880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,7 +2009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4109352147708584335}
-  - component: {fileID: 3694476318452721777}
   m_Layer: 0
   m_Name: Tomato_03_2
   m_TagString: Untagged
@@ -2154,29 +2033,6 @@ Transform:
   - {fileID: 7517770254685710005}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &3694476318452721777
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109352147709017519}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1520410305377058107}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8714519246087968318}
-  m_Enabled: 1
 --- !u!1 &4115287357804715625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,7 +2077,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4185633566118054721}
-  - component: {fileID: 3482526265518588607}
   m_Layer: 0
   m_Name: Tomato_04_4
   m_TagString: Untagged
@@ -2246,29 +2101,6 @@ Transform:
   - {fileID: 7729722581804747899}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: -6.8100004, y: 0, z: 0}
---- !u!205 &3482526265518588607
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4185633566118156129}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1587682226749052917}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8926469374175575280}
-  m_Enabled: 1
 --- !u!1 &4322384818023819503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,6 +2317,79 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4358798854961040906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4476581489226816715}
+  - component: {fileID: 5898258330595537884}
+  - component: {fileID: 3613488091057512589}
+  m_Layer: 0
+  m_Name: TomatoeDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4476581489226816715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358798854961040906}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4983334815619547177}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5898258330595537884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358798854961040906}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.21, z: 0.5}
+  m_Center: {x: 0, y: 0.2, z: 0}
+--- !u!114 &3613488091057512589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358798854961040906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96a8c195cd993f4cb688c10d3e8e519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Basket
+  fillStages:
+  - {fileID: 7097244636920017403}
+  - {fileID: 6859074873390269107}
+  - {fileID: 3572031202902583529}
+  - {fileID: 4322384818023819503}
+  - {fileID: 4115287357804715625}
+  basketGrab: {fileID: 5479692350924002631}
 --- !u!1 &4714543707091409015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,7 +2669,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5174048871562319166}
-  - component: {fileID: 5588926093561470144}
   m_Layer: 0
   m_Name: Tomato_03_3
   m_TagString: Untagged
@@ -2789,29 +2693,6 @@ Transform:
   - {fileID: 1629964689319989764}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &5588926093561470144
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174048871562348830}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 7769594560812190090}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 448813077412176527}
-  m_Enabled: 1
 --- !u!1 &5328301083113205944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,7 +2882,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5529176506959802064}
-  - component: {fileID: 5114299301695661870}
   m_Layer: 0
   m_Name: Tomato_01_2
   m_TagString: Untagged
@@ -3026,29 +2906,6 @@ Transform:
   - {fileID: 2155168728770456042}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &5114299301695661870
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529176506959508208}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6964073156386042468}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 958421918876064097}
-  m_Enabled: 1
 --- !u!1 &5534237285917363333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3058,7 +2915,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534237285917397157}
-  - component: {fileID: 5084493472389077339}
   m_Layer: 0
   m_Name: Tomato_04_2
   m_TagString: Untagged
@@ -3083,29 +2939,6 @@ Transform:
   - {fileID: 2134329416656263071}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: 12.462001, y: -2.6750002, z: 15.314001}
---- !u!205 &5084493472389077339
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5534237285917363333}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6976991041138920465}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 953325414382331668}
-  m_Enabled: 1
 --- !u!1 &5665388367433156143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3205,7 +3038,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5871963068204321849}
-  - component: {fileID: 6575070661030905287}
   m_Layer: 0
   m_Name: Tomato_01_5
   m_TagString: Untagged
@@ -3230,29 +3062,6 @@ Transform:
   - {fileID: 13019841676610307}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6575070661030905287
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5871963068204814361}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9035250352533213325}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1191778623770622856}
-  m_Enabled: 1
 --- !u!1 &5878500313161926300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,7 +3071,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5878500313162160828}
-  - component: {fileID: 6617635311840301890}
   m_Layer: 0
   m_Name: Tomato_01_4
   m_TagString: Untagged
@@ -3287,29 +3095,6 @@ Transform:
   - {fileID: 56161770065042822}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6617635311840301890
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5878500313161926300}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9046165930386818568}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1181011789492907277}
-  m_Enabled: 1
 --- !u!1 &5962983763024533245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3319,7 +3104,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5962983763024038621}
-  - component: {fileID: 6377931056643261219}
   m_Layer: 0
   m_Name: Tomato_04_5
   m_TagString: Untagged
@@ -3344,29 +3128,6 @@ Transform:
   - {fileID: 257795984839069159}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: 18.59, y: 0, z: 0}
---- !u!205 &6377931056643261219
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5962983763024533245}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9141754447675217513}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1384765862613892460}
-  m_Enabled: 1
 --- !u!1 &6022407391246580871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,7 +3137,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6022407391247065255}
-  - component: {fileID: 6472186409236621657}
   m_Layer: 0
   m_Name: Tomato_04_1
   m_TagString: Untagged
@@ -3401,29 +3161,6 @@ Transform:
   - {fileID: 198375724239120285}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: -9.418, y: 0, z: 0}
---- !u!205 &6472186409236621657
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6022407391246580871}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9191051354444463123}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1325334314522482454}
-  m_Enabled: 1
 --- !u!1 &6043708896981660943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,7 +3170,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6043708896981428527}
-  - component: {fileID: 6457495124441899217}
   m_Layer: 0
   m_Name: Tomato_05_2
   m_TagString: Untagged
@@ -3458,29 +3194,6 @@ Transform:
   - {fileID: 183722956559527445}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.111}
---- !u!205 &6457495124441899217
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043708896981660943}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9205742634978325915}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1308570759512874654}
-  m_Enabled: 1
 --- !u!1 &6098174972219999741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3492,11 +3205,9 @@ GameObject:
   - component: {fileID: 4983334815619547177}
   - component: {fileID: 8477097528473024045}
   - component: {fileID: 6427373146851317909}
-  - component: {fileID: 4959520362187606209}
   - component: {fileID: 6278278716270257545}
-  - component: {fileID: 6001440447364372727}
-  - component: {fileID: 3941362962136002646}
-  - component: {fileID: 6726999817868818842}
+  - component: {fileID: 8711641296395580706}
+  - component: {fileID: 5479692350924002631}
   m_Layer: 0
   m_Name: Basket
   m_TagString: Untagged
@@ -3512,18 +3223,19 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6098174972219999741}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7855516, z: -0, w: 0.6187962}
-  m_LocalPosition: {x: -5.801021, y: 1.1861248, z: 5.2027335}
+  m_LocalRotation: {x: -0, y: 0.49718753, z: -0, w: 0.86764306}
+  m_LocalPosition: {x: -5.850266, y: 1.1548028, z: 5.4791236}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 4476581489226816715}
   - {fileID: 2426041350170969973}
   - {fileID: 2574514599701929993}
   - {fileID: 8935206619751020035}
   - {fileID: 6081741419340348942}
   - {fileID: 3540433806911847699}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 103.543, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 59.628, z: 0}
 --- !u!33 &8477097528473024045
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3581,25 +3293,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4959520362187606209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6098174972219999741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96a8c195cd993f4cb688c10d3e8e519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Basket
-  fillStages:
-  - {fileID: 7097244636920017403}
-  - {fileID: 6859074873390269107}
-  - {fileID: 3572031202902583529}
-  - {fileID: 4322384818023819503}
-  - {fileID: 4115287357804715625}
-  basketGrab: {fileID: 6726999817868818842}
 --- !u!65 &6278278716270257545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3615,13 +3308,13 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6659713, y: 0.4, z: 0.53553766}
-  m_Center: {x: 0, y: 0.2, z: 0}
---- !u!54 &6001440447364372727
+  m_Size: {x: 0.6659713, y: 0.2, z: 0.53553766}
+  m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!54 &8711641296395580706
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3644,32 +3337,11 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &3941362962136002646
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6098174972219999741}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.6659713, y: 0.3518427, z: 0.53553766}
-  m_Center: {x: 0, y: 0.17592135, z: 0}
---- !u!114 &6726999817868818842
+  m_CollisionDetection: 1
+--- !u!114 &5479692350924002631
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3682,8 +3354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 3941362962136002646}
+  m_Colliders: []
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
@@ -4438,7 +4109,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6638278133895544332}
-  - component: {fileID: 6223366002634733554}
   m_Layer: 0
   m_Name: Tomato_03_4
   m_TagString: Untagged
@@ -4463,29 +4133,6 @@ Transform:
   - {fileID: 958353009752193334}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 12.097, y: 0, z: 0}
---- !u!205 &6223366002634733554
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6638278133895242284}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8070778002615116472}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2155128406677539261}
-  m_Enabled: 1
 --- !u!1 &6741850795218412390
 GameObject:
   m_ObjectHideFlags: 0
@@ -4495,7 +4142,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6741850795218190150}
-  - component: {fileID: 6326973870611183288}
   m_Layer: 0
   m_Name: Tomato_01_3
   m_TagString: Untagged
@@ -4520,29 +4166,6 @@ Transform:
   - {fileID: 926892299236456572}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6326973870611183288
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741850795218412390}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8183342388674372594}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2051590294090172663}
-  m_Enabled: 1
 --- !u!1 &6859074873390269107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,7 +4336,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7221491146414116607}
-  - component: {fileID: 7959500246260336385}
   m_Layer: 0
   m_Name: Tomato_02_3
   m_TagString: Untagged
@@ -4738,29 +4360,6 @@ Transform:
   - {fileID: 3847417519392868805}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &7959500246260336385
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221491146414084831}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5199736655343997515}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2720324788645804366}
-  m_Enabled: 1
 --- !u!1 &7343705425523856803
 GameObject:
   m_ObjectHideFlags: 0
@@ -4860,7 +4459,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7466873734646328752}
-  - component: {fileID: 7916653848022148174}
   m_Layer: 0
   m_Name: Tomato_03_1
   m_TagString: Untagged
@@ -4885,29 +4483,6 @@ Transform:
   - {fileID: 3948685106938079882}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &7916653848022148174
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7466873734646624656}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5440740902118551812}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2767674232698673665}
-  m_Enabled: 1
 --- !u!1 &7882857712057589230
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,7 +4672,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8386740983325401829}
-  - component: {fileID: 9088687222354160411}
   m_Layer: 0
   m_Name: Tomato_05_3
   m_TagString: Untagged
@@ -5122,29 +4696,6 @@ Transform:
   - {fileID: 2679807031429342687}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &9088687222354160411
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8386740983325638341}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6376392709660032593}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 3860952028609664340}
-  m_Enabled: 1
 --- !u!1 &8455572112785674357
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,7 +4795,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8477866118964343945}
-  - component: {fileID: 9215876614404930935}
   m_Layer: 0
   m_Name: Tomato_04_3
   m_TagString: Untagged
@@ -5269,29 +4819,6 @@ Transform:
   - {fileID: 2662832891105571763}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -41.136}
---- !u!205 &9215876614404930935
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477866118964832425}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6465376099731728445}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 3769518686121493304}
-  m_Enabled: 1
 --- !u!1 &8838721569955924290
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,7 +4918,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8938045145967379300}
-  - component: {fileID: 8523167946339863194}
   m_Layer: 0
   m_Name: Tomato_05_1
   m_TagString: Untagged
@@ -5416,29 +4942,6 @@ Transform:
   - {fileID: 3267773309234234462}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 19.095001, y: 47.842003, z: -17.521}
---- !u!205 &8523167946339863194
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8938045145967615812}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5770412583084711888}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4466791967719830741}
-  m_Enabled: 1
 --- !u!1 &8943320943309021833
 GameObject:
   m_ObjectHideFlags: 0
