@@ -101,7 +101,6 @@ GameObject:
   - component: {fileID: 884309928523245519}
   - component: {fileID: 711825263390069762}
   - component: {fileID: 6376392709660032593}
-  - component: {fileID: 8377274807014891836}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -181,28 +180,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8377274807014891836
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330178832108630994}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &383326904982332862
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +191,6 @@ GameObject:
   - component: {fileID: 973178969511227811}
   - component: {fileID: 586654746499203694}
   - component: {fileID: 6465376099731728445}
-  - component: {fileID: 8468686090684987216}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -294,28 +270,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8468686090684987216
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383326904982332862}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &412591900472418479
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +369,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747533678349670517}
-  - component: {fileID: 8432471543861643}
   m_Layer: 0
   m_Name: Tomato_02_1
   m_TagString: Untagged
@@ -440,29 +393,6 @@ Transform:
   - {fileID: 6560869298905997135}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &8432471543861643
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 747533678349632597}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2756496494081295553}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5451799762491944900}
-  m_Enabled: 1
 --- !u!1 &931040714922094494
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +402,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 931040714922193854}
-  - component: {fileID: 480064619340364352}
   m_Layer: 0
   m_Name: Tomato_02_4
   m_TagString: Untagged
@@ -497,29 +426,6 @@ Transform:
   - {fileID: 6753322112963736708}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &480064619340364352
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931040714922094494}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2374935801917337354}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5556548639894307855}
-  m_Enabled: 1
 --- !u!1 &935877012066161235
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +437,6 @@ GameObject:
   - component: {fileID: 300707602988451406}
   - component: {fileID: 110630141928666499}
   - component: {fileID: 5770412583084711888}
-  - component: {fileID: 8947508711814578365}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -611,28 +516,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8947508711814578365
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 935877012066161235}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &1252528544677129713
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +525,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1252528544677097937}
-  - component: {fileID: 1955636126095833135}
   m_Layer: 0
   m_Name: Tomato_02_2
   m_TagString: Untagged
@@ -667,29 +549,6 @@ Transform:
   - {fileID: 4625977633507735275}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &1955636126095833135
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252528544677129713}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4431312290322378085}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5806981635996616288}
-  m_Enabled: 1
 --- !u!1 &1495569410818465736
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +560,6 @@ GameObject:
   - component: {fileID: 2022644699760479189}
   - component: {fileID: 1852310803805763608}
   - component: {fileID: 5199736655343997515}
-  - component: {fileID: 7212053695226563878}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -781,28 +639,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7212053695226563878
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495569410818465736}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &1521269677937973428
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,7 +648,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1521269677938394260}
-  - component: {fileID: 2260404681681948010}
   m_Layer: 0
   m_Name: Tomato_01_1
   m_TagString: Untagged
@@ -837,29 +672,6 @@ Transform:
   - {fileID: 4922298607219360686}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &2260404681681948010
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521269677937973428}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4107966385968666656}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6119206220485047077}
-  m_Enabled: 1
 --- !u!1 &1686911983739993223
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +683,6 @@ GameObject:
   - component: {fileID: 2286044469191075994}
   - component: {fileID: 1881646109413628759}
   - component: {fileID: 5440740902118551812}
-  - component: {fileID: 7475435974745943657}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -951,28 +762,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7475435974745943657
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686911983739993223}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &1743889962463634112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +953,6 @@ GameObject:
   - component: {fileID: 3004643874307383190}
   - component: {fileID: 3177282737419332699}
   - component: {fileID: 9046165930386818568}
-  - component: {fileID: 5887646806454311269}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -1244,28 +1032,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5887646806454311269
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2405510959099513739}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &2417255250624388366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,7 +1043,6 @@ GameObject:
   - component: {fileID: 2980085530540149011}
   - component: {fileID: 3242097500665527006}
   - component: {fileID: 9035250352533213325}
-  - component: {fileID: 5862798569306165216}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -1357,28 +1122,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5862798569306165216
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2417255250624388366}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &2465282885047442410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,7 +1133,6 @@ GameObject:
   - component: {fileID: 3091375275621011447}
   - component: {fileID: 3405740637858430010}
   - component: {fileID: 9141754447675217513}
-  - component: {fileID: 5972187980605540612}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -1470,28 +1212,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5972187980605540612
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2465282885047442410}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &2533598750183536664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,7 +1223,6 @@ GameObject:
   - component: {fileID: 3168724840229809157}
   - component: {fileID: 3340764977377288136}
   - component: {fileID: 9205742634978325915}
-  - component: {fileID: 6052325838787160822}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -1583,28 +1302,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6052325838787160822
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2533598750183536664}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &2550537150627443088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,7 +1313,6 @@ GameObject:
   - component: {fileID: 3149670705509918093}
   - component: {fileID: 3319358183187043904}
   - component: {fileID: 9191051354444463123}
-  - component: {fileID: 6030985024253617022}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -1696,28 +1392,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6030985024253617022
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2550537150627443088}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &3236207219426209595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,7 +1403,6 @@ GameObject:
   - component: {fileID: 2610369823762201382}
   - component: {fileID: 2422021779473533163}
   - component: {fileID: 8070778002615116472}
-  - component: {fileID: 6646848757670854101}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -1809,28 +1482,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6646848757670854101
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3236207219426209595}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &3276766818152754801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1493,6 @@ GameObject:
   - component: {fileID: 2713945272026839660}
   - component: {fileID: 2309366563364112801}
   - component: {fileID: 8183342388674372594}
-  - component: {fileID: 6750441623907974303}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -1922,28 +1572,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6750441623907974303
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3276766818152754801}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &3482743473565135518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,7 +1706,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3574691653650123072}
-  - component: {fileID: 4312737311541526718}
   m_Layer: 0
   m_Name: Tomato_05_4
   m_TagString: Untagged
@@ -2103,29 +1730,6 @@ Transform:
   - {fileID: 6974102371861007994}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &4312737311541526718
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3574691653649765728}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2127128394010301940}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8101043387451768561}
-  m_Enabled: 1
 --- !u!1 &3694131678204876880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,7 +1831,6 @@ GameObject:
   - component: {fileID: 4606031529050837012}
   - component: {fileID: 4201492566206194649}
   - component: {fileID: 7769594560812190090}
-  - component: {fileID: 5182611249918777063}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -2307,28 +1910,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5182611249918777063
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979877578459153417}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &4091997053198981713
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,7 +2009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4109352147708584335}
-  - component: {fileID: 3694476318452721777}
   m_Layer: 0
   m_Name: Tomato_03_2
   m_TagString: Untagged
@@ -2453,29 +2033,6 @@ Transform:
   - {fileID: 7517770254685710005}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &3694476318452721777
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109352147709017519}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1520410305377058107}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8714519246087968318}
-  m_Enabled: 1
 --- !u!1 &4115287357804715625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2520,7 +2077,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4185633566118054721}
-  - component: {fileID: 3482526265518588607}
   m_Layer: 0
   m_Name: Tomato_04_4
   m_TagString: Untagged
@@ -2545,29 +2101,6 @@ Transform:
   - {fileID: 7729722581804747899}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: -6.8100004, y: 0, z: 0}
---- !u!205 &3482526265518588607
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4185633566118156129}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1587682226749052917}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8926469374175575280}
-  m_Enabled: 1
 --- !u!1 &4322384818023819503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,7 +2148,6 @@ GameObject:
   - component: {fileID: 3813295655866897807}
   - component: {fileID: 3553012786957493826}
   - component: {fileID: 6976991041138920465}
-  - component: {fileID: 5542858074961056636}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -2695,28 +2227,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5542858074961056636
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4340125227061477778}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &4345167868906979303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,7 +2238,6 @@ GameObject:
   - component: {fileID: 3791353520166185978}
   - component: {fileID: 3546810722985416759}
   - component: {fileID: 6964073156386042468}
-  - component: {fileID: 5519772451999296777}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -2808,28 +2317,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5519772451999296777
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4345167868906979303}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &4358798854961040906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,7 +2401,6 @@ GameObject:
   - component: {fileID: 5313640982132427882}
   - component: {fileID: 5483275679960088487}
   - component: {fileID: 2127128394010301940}
-  - component: {fileID: 3583286880273107609}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -2994,28 +2480,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3583286880273107609
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4714543707091409015}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &5016981123873653684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3205,7 +2669,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5174048871562319166}
-  - component: {fileID: 5588926093561470144}
   m_Layer: 0
   m_Name: Tomato_03_3
   m_TagString: Untagged
@@ -3230,29 +2693,6 @@ Transform:
   - {fileID: 1629964689319989764}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &5588926093561470144
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174048871562348830}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 7769594560812190090}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 448813077412176527}
-  m_Enabled: 1
 --- !u!1 &5328301083113205944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,7 +2704,6 @@ GameObject:
   - component: {fileID: 4693130474405504165}
   - component: {fileID: 4937074609049114472}
   - component: {fileID: 1520410305377058107}
-  - component: {fileID: 4118231185497858646}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -3344,28 +2783,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4118231185497858646
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5328301083113205944}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &5395571932857440886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3377,7 +2794,6 @@ GameObject:
   - component: {fileID: 4769409595007536747}
   - component: {fileID: 5158031964308684198}
   - component: {fileID: 1587682226749052917}
-  - component: {fileID: 4195073354870982808}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -3457,28 +2873,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4195073354870982808
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5395571932857440886}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &5529176506959508208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3488,7 +2882,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5529176506959802064}
-  - component: {fileID: 5114299301695661870}
   m_Layer: 0
   m_Name: Tomato_01_2
   m_TagString: Untagged
@@ -3513,29 +2906,6 @@ Transform:
   - {fileID: 2155168728770456042}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &5114299301695661870
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529176506959508208}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6964073156386042468}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 958421918876064097}
-  m_Enabled: 1
 --- !u!1 &5534237285917363333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,7 +2915,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5534237285917397157}
-  - component: {fileID: 5084493472389077339}
   m_Layer: 0
   m_Name: Tomato_04_2
   m_TagString: Untagged
@@ -3570,29 +2939,6 @@ Transform:
   - {fileID: 2134329416656263071}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: 12.462001, y: -2.6750002, z: 15.314001}
---- !u!205 &5084493472389077339
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5534237285917363333}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6976991041138920465}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 953325414382331668}
-  m_Enabled: 1
 --- !u!1 &5665388367433156143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3692,7 +3038,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5871963068204321849}
-  - component: {fileID: 6575070661030905287}
   m_Layer: 0
   m_Name: Tomato_01_5
   m_TagString: Untagged
@@ -3717,29 +3062,6 @@ Transform:
   - {fileID: 13019841676610307}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6575070661030905287
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5871963068204814361}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9035250352533213325}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1191778623770622856}
-  m_Enabled: 1
 --- !u!1 &5878500313161926300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,7 +3071,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5878500313162160828}
-  - component: {fileID: 6617635311840301890}
   m_Layer: 0
   m_Name: Tomato_01_4
   m_TagString: Untagged
@@ -3774,29 +3095,6 @@ Transform:
   - {fileID: 56161770065042822}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6617635311840301890
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5878500313161926300}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9046165930386818568}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1181011789492907277}
-  m_Enabled: 1
 --- !u!1 &5962983763024533245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,7 +3104,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5962983763024038621}
-  - component: {fileID: 6377931056643261219}
   m_Layer: 0
   m_Name: Tomato_04_5
   m_TagString: Untagged
@@ -3831,29 +3128,6 @@ Transform:
   - {fileID: 257795984839069159}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: 18.59, y: 0, z: 0}
---- !u!205 &6377931056643261219
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5962983763024533245}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9141754447675217513}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1384765862613892460}
-  m_Enabled: 1
 --- !u!1 &6022407391246580871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3863,7 +3137,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6022407391247065255}
-  - component: {fileID: 6472186409236621657}
   m_Layer: 0
   m_Name: Tomato_04_1
   m_TagString: Untagged
@@ -3888,29 +3161,6 @@ Transform:
   - {fileID: 198375724239120285}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: -9.418, y: 0, z: 0}
---- !u!205 &6472186409236621657
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6022407391246580871}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9191051354444463123}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1325334314522482454}
-  m_Enabled: 1
 --- !u!1 &6043708896981660943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,7 +3170,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6043708896981428527}
-  - component: {fileID: 6457495124441899217}
   m_Layer: 0
   m_Name: Tomato_05_2
   m_TagString: Untagged
@@ -3945,29 +3194,6 @@ Transform:
   - {fileID: 183722956559527445}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.111}
---- !u!205 &6457495124441899217
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043708896981660943}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 9205742634978325915}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 1308570759512874654}
-  m_Enabled: 1
 --- !u!1 &6098174972219999741
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,7 +3205,6 @@ GameObject:
   - component: {fileID: 4983334815619547177}
   - component: {fileID: 8477097528473024045}
   - component: {fileID: 6427373146851317909}
-  - component: {fileID: 1737197830528962953}
   - component: {fileID: 6278278716270257545}
   - component: {fileID: 8711641296395580706}
   - component: {fileID: 5479692350924002631}
@@ -3999,7 +3224,7 @@ Transform:
   m_GameObject: {fileID: 6098174972219999741}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.49718753, z: -0, w: 0.86764306}
-  m_LocalPosition: {x: -2.889, y: 1.544, z: 9.441}
+  m_LocalPosition: {x: -5.850266, y: 1.1548028, z: 5.4791236}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4068,28 +3293,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1737197830528962953
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6098174972219999741}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: ff53e1a687da3e94aad8ba03f54ffac9, type: 3}
 --- !u!65 &6278278716270257545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4906,7 +4109,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6638278133895544332}
-  - component: {fileID: 6223366002634733554}
   m_Layer: 0
   m_Name: Tomato_03_4
   m_TagString: Untagged
@@ -4931,29 +4133,6 @@ Transform:
   - {fileID: 958353009752193334}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 12.097, y: 0, z: 0}
---- !u!205 &6223366002634733554
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6638278133895242284}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8070778002615116472}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2155128406677539261}
-  m_Enabled: 1
 --- !u!1 &6741850795218412390
 GameObject:
   m_ObjectHideFlags: 0
@@ -4963,7 +4142,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6741850795218190150}
-  - component: {fileID: 6326973870611183288}
   m_Layer: 0
   m_Name: Tomato_01_3
   m_TagString: Untagged
@@ -4988,29 +4166,6 @@ Transform:
   - {fileID: 926892299236456572}
   m_Father: {fileID: 2426041350170969973}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6326973870611183288
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6741850795218412390}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8183342388674372594}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2051590294090172663}
-  m_Enabled: 1
 --- !u!1 &6859074873390269107
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,7 +4212,6 @@ GameObject:
   - component: {fileID: 7586282098083460347}
   - component: {fileID: 7846037048733615926}
   - component: {fileID: 4431312290322378085}
-  - component: {fileID: 1243098377825186312}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -5137,28 +4291,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1243098377825186312
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7032185585039171814}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &7097244636920017403
 GameObject:
   m_ObjectHideFlags: 0
@@ -5204,7 +4336,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7221491146414116607}
-  - component: {fileID: 7959500246260336385}
   m_Layer: 0
   m_Name: Tomato_02_3
   m_TagString: Untagged
@@ -5229,29 +4360,6 @@ Transform:
   - {fileID: 3847417519392868805}
   m_Father: {fileID: 2574514599701929993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &7959500246260336385
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7221491146414084831}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5199736655343997515}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2720324788645804366}
-  m_Enabled: 1
 --- !u!1 &7343705425523856803
 GameObject:
   m_ObjectHideFlags: 0
@@ -5263,7 +4371,6 @@ GameObject:
   - component: {fileID: 7870781397651145150}
   - component: {fileID: 7539020850860061299}
   - component: {fileID: 4107966385968666656}
-  - component: {fileID: 1530412186339821389}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -5343,28 +4450,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1530412186339821389
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7343705425523856803}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &7466873734646624656
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,7 +4459,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7466873734646328752}
-  - component: {fileID: 7916653848022148174}
   m_Layer: 0
   m_Name: Tomato_03_1
   m_TagString: Untagged
@@ -5399,29 +4483,6 @@ Transform:
   - {fileID: 3948685106938079882}
   m_Father: {fileID: 8935206619751020035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &7916653848022148174
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7466873734646624656}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5440740902118551812}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2767674232698673665}
-  m_Enabled: 1
 --- !u!1 &7882857712057589230
 GameObject:
   m_ObjectHideFlags: 0
@@ -5611,7 +4672,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8386740983325401829}
-  - component: {fileID: 9088687222354160411}
   m_Layer: 0
   m_Name: Tomato_05_3
   m_TagString: Untagged
@@ -5636,29 +4696,6 @@ Transform:
   - {fileID: 2679807031429342687}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &9088687222354160411
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8386740983325638341}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6376392709660032593}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 3860952028609664340}
-  m_Enabled: 1
 --- !u!1 &8455572112785674357
 GameObject:
   m_ObjectHideFlags: 0
@@ -5758,7 +4795,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8477866118964343945}
-  - component: {fileID: 9215876614404930935}
   m_Layer: 0
   m_Name: Tomato_04_3
   m_TagString: Untagged
@@ -5783,29 +4819,6 @@ Transform:
   - {fileID: 2662832891105571763}
   m_Father: {fileID: 6081741419340348942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -41.136}
---- !u!205 &9215876614404930935
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477866118964832425}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6465376099731728445}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 3769518686121493304}
-  m_Enabled: 1
 --- !u!1 &8838721569955924290
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,7 +4830,6 @@ GameObject:
   - component: {fileID: 8248842617044131167}
   - component: {fileID: 8636950637109440146}
   - component: {fileID: 2756496494081295553}
-  - component: {fileID: 756176594993535916}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -5897,28 +4909,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &756176594993535916
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8838721569955924290}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &8938045145967615812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5928,7 +4918,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8938045145967379300}
-  - component: {fileID: 8523167946339863194}
   m_Layer: 0
   m_Name: Tomato_05_1
   m_TagString: Untagged
@@ -5953,29 +4942,6 @@ Transform:
   - {fileID: 3267773309234234462}
   m_Father: {fileID: 3540433806911847699}
   m_LocalEulerAnglesHint: {x: 19.095001, y: 47.842003, z: -17.521}
---- !u!205 &8523167946339863194
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8938045145967615812}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.0017213561, y: -0.0019704625, z: -0.00014097989}
-  m_Size: 0.17606398
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.023571635
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 5770412583084711888}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4466791967719830741}
-  m_Enabled: 1
 --- !u!1 &8943320943309021833
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,7 +4953,6 @@ GameObject:
   - component: {fileID: 8416589799895627412}
   - component: {fileID: 8172029651045926233}
   - component: {fileID: 2374935801917337354}
-  - component: {fileID: 921557770052661351}
   m_Layer: 0
   m_Name: Tomato_03_LOD0
   m_TagString: Untagged
@@ -6067,28 +5032,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &921557770052661351
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8943320943309021833}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7859820949308486741, guid: b7cf12fb849f2ce4592a36e9c9c8d4f9, type: 3}
 --- !u!1 &9004108443378788248
 GameObject:
   m_ObjectHideFlags: 0
