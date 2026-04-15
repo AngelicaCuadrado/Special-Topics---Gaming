@@ -54,7 +54,7 @@ public class CaterpillarSpray : MonoBehaviour
     {
         isSpraying = false;
         sprayParticles.Stop();
-        sprayHitbox.SetActive(false); // <--- APAGAMOS EL DAÑO
+        sprayHitbox.SetActive(false);
     }
 
     private void HandleCooldownAndRecharge()
