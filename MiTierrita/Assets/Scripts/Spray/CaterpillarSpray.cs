@@ -14,6 +14,7 @@ public class CaterpillarSpray : MonoBehaviour
     public XRGrabInteractable grabInteractable;
     public ParticleSystem sprayParticles;
     public GameObject sprayHitbox;
+    public AudioSource sprayAudio;
 
     [Header("UI del Objeto")]
     public GameObject uiCanvas;
@@ -26,6 +27,8 @@ public class CaterpillarSpray : MonoBehaviour
         currentCapacity = maxCapacity;
         uiCanvas.SetActive(false);
         sprayHitbox.SetActive(false);
+
+        if (sprayAudio != null) sprayAudio.Stop();
 
         if (grabInteractable == null)
             grabInteractable = GetComponent<XRGrabInteractable>();
@@ -47,6 +50,9 @@ public class CaterpillarSpray : MonoBehaviour
             isSpraying = true;
             sprayParticles.Play();
             sprayHitbox.SetActive(true);
+
+            if (sprayAudio != null && !sprayAudio.isPlaying)
+                sprayAudio.Play();
         }
     }
 
@@ -55,6 +61,9 @@ public class CaterpillarSpray : MonoBehaviour
         isSpraying = false;
         sprayParticles.Stop();
         sprayHitbox.SetActive(false);
+
+        if (sprayAudio != null)
+            sprayAudio.Stop();
     }
 
     private void HandleCooldownAndRecharge()
