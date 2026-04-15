@@ -10879,17 +10879,25 @@ PrefabInstance:
       propertyPath: m_Model
       value: 
       objectReference: {fileID: 5022602860645237092, guid: 82db4a1f792a43c4da7698b7aa80c062, type: 3}
+    - target: {fileID: 1265147968557052439, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
+      propertyPath: m_BrainParameters.VectorObservationSize
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4252504439501221246, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 441087507}
+    - target: {fileID: 4252504439501221246, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
+      propertyPath: arenaSize
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6800638625184929751, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: m_Name
       value: TempCaterpillar
       objectReference: {fileID: 0}
     - target: {fileID: 7508617579249659781, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.51
       objectReference: {fileID: 0}
     - target: {fileID: 7508617579249659781, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10897,7 +10905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7508617579249659781, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.54
       objectReference: {fileID: 0}
     - target: {fileID: 7508617579249659781, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: m_LocalRotation.w
