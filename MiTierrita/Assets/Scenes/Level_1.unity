@@ -5103,11 +5103,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329148435}
   m_CullTransparentMesh: 1
---- !u!4 &338990877 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7508617579249659781, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
-  m_PrefabInstance: {fileID: 1122067247}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &360163365
 GameObject:
   m_ObjectHideFlags: 0
@@ -5938,13 +5933,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2007753076}
-    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2007753077}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!1001 &465799761
 PrefabInstance:
@@ -13184,7 +13173,7 @@ PrefabInstance:
     - target: {fileID: 4252504439501221246, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2007753075}
+      objectReference: {fileID: 1953327802}
     - target: {fileID: 4252504439501221246, guid: b25228ebc53f5234fa88951d26a10740, type: 3}
       propertyPath: arenaSize
       value: 20
@@ -25131,6 +25120,11 @@ RectTransform:
   m_AnchoredPosition: {x: 21, y: -35}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &1953327802 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1680501587, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1958575673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25479,45 +25473,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8554979865546078707, guid: aec8969d0290c6d4cbc587ef85a01ce4, type: 3}
   m_PrefabInstance: {fileID: 1985969421}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2007753069 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 441087506}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2007753075 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 441087506}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2007753076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007753069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74cd200576fc9874e889091acb676e35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  controlMode: 0
-  moveSpeed: 3
-  targetAgent: {fileID: 338990877}
-  chaseDistance: 10
-  randomMoveRadius: 5
---- !u!114 &2007753077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2007753069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6d288543a08cb043a5246522666f844, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerDamageZone
 --- !u!1001 &2009262413
 PrefabInstance:
   m_ObjectHideFlags: 0
