@@ -10,7 +10,7 @@ public class Basket : MonoBehaviour
     [SerializeField] private XRGrabInteractable basketGrab;
 
     private int currentTomatoCount = 0;
-    private int maxTomatoes = 5;
+    private int maxTomatoes = 3;
     void Start()
     {
         foreach (GameObject stage in fillStages)
@@ -47,8 +47,6 @@ public class Basket : MonoBehaviour
                     {
                         basketGrab.enabled = true;
                     }
-
-                    Debug.Log("Basket full! You can now pick it up.");
                 }
             }
             else
