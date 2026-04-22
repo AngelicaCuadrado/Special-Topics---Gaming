@@ -71,16 +71,29 @@ public class TomatoPlant : MonoBehaviour
     {
         UpdateGrowthStage();
         UpdateModel();
+        previousStage = growthStage;
+
+        if (growthStage == GrowthStage.Seed)
+        {
+            PlaySeedParticle();
+        }
     }
 
     void Update()
     {
+
         HandleGrowth();
         UpdateGrowthStage();
 
         if (growthStage != previousStage)
         {
             UpdateModel();
+
+            if (growthStage == GrowthStage.Seed)
+            {
+                PlaySeedParticle();
+            }
+
             previousStage = growthStage;
         }
     }
@@ -191,6 +204,7 @@ public class TomatoPlant : MonoBehaviour
         Vector3 pos = _particleSpawnPoint != null ? _particleSpawnPoint.position : transform.position;
         
         // instantiate the particle system at the determined position
-        Instantiate(_seedParticlePrefab, pos, Quaternion.identity);
+        ParticleSystem ps = Instantiate(_seedParticlePrefab, pos, Quaternion.identity);
+        Destroy(ps.gameObject, 2f);
     }
 }
