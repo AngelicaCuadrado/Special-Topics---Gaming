@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
@@ -19,6 +20,10 @@ public class TomatoPlant : MonoBehaviour
     [Header("Growth Settings")]
     [SerializeField] private float growth = 0f;
     [SerializeField] private float growthRate = 5f;
+
+    [Header("Particle System")]
+    [SerializeField] private ParticleSystem _seedParticlePrefab;
+    [SerializeField] private Transform _particleSpawnPoint;
 
     [Header("Water Settings")]
     public float currentWaterLevel = 0f;
@@ -175,5 +180,17 @@ public class TomatoPlant : MonoBehaviour
             agent.AddReward(1.0f);
             Destroy(gameObject);
         }
+    }
+
+
+    private void PlaySeedParticle() 
+    {
+        if (_seedParticlePrefab == null) return;
+
+        // position of the particle system will be either the specified spawn point or the plant's position
+        Vector3 pos = _particleSpawnPoint != null ? _particleSpawnPoint.position : transform.position;
+        
+        // instantiate the particle system at the determined position
+        Instantiate(_seedParticlePrefab, pos, Quaternion.identity);
     }
 }

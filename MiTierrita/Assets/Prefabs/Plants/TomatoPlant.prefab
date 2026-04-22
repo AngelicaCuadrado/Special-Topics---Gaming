@@ -38,6 +38,7 @@ Transform:
   - {fileID: 7411301925812345817}
   - {fileID: 1343767806215653665}
   - {fileID: 4817297024623525547}
+  - {fileID: 3172225575210692891}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1352935185167710204
@@ -54,6 +55,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TomatoPlant
   growth: 0
   growthRate: 5
+  _seedParticlePrefab: {fileID: 6147504885720290855, guid: ba76cc3b343f2b44e9032731f860325c, type: 3}
+  _particleSpawnPoint: {fileID: 3172225575210692891}
+  currentWaterLevel: 0
+  maxWaterLevel: 100
+  waterDepletionRate: 2
   growthStage: 0
   models:
   - {fileID: 4400405729284512042}
@@ -187,6 +193,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &4196115978944539872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3172225575210692891}
+  m_Layer: 0
+  m_Name: ParticleSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3172225575210692891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196115978944539872}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.15519, y: 0.02346, z: 0.1577}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1084766201553153662}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2092115938531553949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -239,6 +276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seed
       objectReference: {fileID: 0}
+    - target: {fileID: 2313110707396406199, guid: 9abf097bb51657c47a6f9c2265de33c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -265,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 1555652619428584960, guid: b42aff538f11e904bb5b354db20e5618, type: 3}
       propertyPath: m_Name
       value: SM_Tomato_Lv1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1555652619428584960, guid: b42aff538f11e904bb5b354db20e5618, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6318796938530137893, guid: b42aff538f11e904bb5b354db20e5618, type: 3}
       propertyPath: m_LocalPosition.x
@@ -470,6 +515,10 @@ PrefabInstance:
     - target: {fileID: 4532969580906626615, guid: 98043e8be5e46834c8aba761b544354d, type: 3}
       propertyPath: m_Name
       value: TomatoPlantGreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532969580906626615, guid: 98043e8be5e46834c8aba761b544354d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7068446280085568947, guid: 98043e8be5e46834c8aba761b544354d, type: 3}
       propertyPath: m_LocalPosition.x
