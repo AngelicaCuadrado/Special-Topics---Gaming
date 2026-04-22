@@ -6,11 +6,18 @@ public class Basket : MonoBehaviour
     [Header("Visual Tomatoes fill:")]
     [SerializeField] private GameObject[] fillStages;
 
+    [Header("Feedback Effects")]
+    [Tooltip("Particle system")]
+    [SerializeField] private ParticleSystem tomatoParticle;
+    [Tooltip("Audio source for tomato sound")]
+    [SerializeField] private AudioSource tomatoAudio;
+
     [Header("Grab Configuration")]
     [SerializeField] private XRGrabInteractable basketGrab;
 
     private int currentTomatoCount = 0;
     private int maxTomatoes = 3;
+
     void Start()
     {
         foreach (GameObject stage in fillStages)
@@ -18,10 +25,7 @@ public class Basket : MonoBehaviour
             if (stage != null) stage.SetActive(false);
         }
 
-        if (basketGrab != null)
-        {
-            basketGrab.enabled = false;
-        }
+        if (basketGrab != null) basketGrab.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,26 +36,24 @@ public class Basket : MonoBehaviour
         {
             if (currentTomatoCount < maxTomatoes)
             {
+                if (tomatoParticle != null) tomatoParticle.Play();
+                if (tomatoAudio != null) tomatoAudio.Play();
+
                 fillStages[currentTomatoCount].SetActive(true);
                 currentTomatoCount += droppedFruit.value;
                 Destroy(other.gameObject);
+
+                if (GameManager.Instance != null) GameManager.Instance.AddTomatoScore();
+
                 if (currentTomatoCount >= maxTomatoes)
                 {
-                    Rigidbody rbPadre = GetComponentInParent<Rigidbody>();
-                    if (rbPadre != null)
-                    {
-                        rbPadre.isKinematic = false;
-                    }
+                    if (GameManager.Instance != null) GameManager.Instance.BasketFilledScore();
 
-                    if (basketGrab != null)
-                    {
-                        basketGrab.enabled = true;
-                    }
+                    Rigidbody rbPadre = GetComponentInParent<Rigidbody>();
+                    if (rbPadre != null) rbPadre.isKinematic = false;
+
+                    if (basketGrab != null) basketGrab.enabled = true;
                 }
-            }
-            else
-            {
-                Debug.Log("This basket is already full, please move this tomato to another basket.");
             }
         }
     }

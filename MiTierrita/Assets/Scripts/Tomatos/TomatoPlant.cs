@@ -22,6 +22,10 @@ public class TomatoPlant : MonoBehaviour
     [SerializeField] private float growth = 0f;
     [SerializeField] private float growthRate = 5f;
 
+    [Header("Particle System")]
+    [SerializeField] private ParticleSystem _seedParticlePrefab;
+    [SerializeField] private Transform _particleSpawnPoint;
+
     [Header("Water Settings")]
     public float currentWaterLevel = 0f;
     public float maxWaterLevel = 100f;
@@ -78,16 +82,29 @@ public class TomatoPlant : MonoBehaviour
         if (Application.isPlaying && Academy.Instance.IsCommunicatorOn) AutoWater = true;
         UpdateGrowthStage();
         UpdateModel();
+        previousStage = growthStage;
+
+        if (growthStage == GrowthStage.Seed)
+        {
+            PlaySeedParticle();
+        }
     }
 
     void Update()
     {
+
         HandleGrowth();
         UpdateGrowthStage();
 
         if (growthStage != previousStage)
         {
             UpdateModel();
+
+            if (growthStage == GrowthStage.Seed)
+            {
+                PlaySeedParticle();
+            }
+
             previousStage = growthStage;
         }
     }
@@ -202,5 +219,18 @@ public class TomatoPlant : MonoBehaviour
 
             Destroy(gameObject);
         }
+    }
+
+
+    private void PlaySeedParticle() 
+    {
+        if (_seedParticlePrefab == null) return;
+
+        // position of the particle system will be either the specified spawn point or the plant's position
+        Vector3 pos = _particleSpawnPoint != null ? _particleSpawnPoint.position : transform.position;
+        
+        // instantiate the particle system at the determined position
+        ParticleSystem ps = Instantiate(_seedParticlePrefab, pos, Quaternion.identity);
+        Destroy(ps.gameObject, 2f);
     }
 }

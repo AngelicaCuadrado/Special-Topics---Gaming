@@ -8,7 +8,9 @@ public class SprayHitbox : MonoBehaviour
 
         if (agent != null)
         {
-            Debug.Log("Caterpillar Killed");
+            Debug.Log("Worm Killed");
+            if (GameManager.Instance != null) GameManager.Instance.CaterpillarKilledScore();
+
             agent.AddReward(-1.0f);
             agent.EndEpisode();
         }
