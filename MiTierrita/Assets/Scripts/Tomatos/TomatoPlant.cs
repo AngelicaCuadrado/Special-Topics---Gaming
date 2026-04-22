@@ -45,6 +45,8 @@ public class TomatoPlant : MonoBehaviour
 
     private PlantSpawner spawner;
 
+    private bool isConsumed = false;
+
     private void Awake()
     {
         interactable = GetComponent<XRSimpleInteractable>();
@@ -182,16 +184,22 @@ public class TomatoPlant : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (isConsumed) return;
+
         CaterpillarAgent agent = other.GetComponent<CaterpillarAgent>();
 
         if (agent != null && growthStage >= GrowthStage.Sapling)
         {
+            isConsumed = true;
+
             agent.AddReward(1.0f);
+
             if (spawner != null)
                 spawner.SpawnPlant();
 
             if (originSpot != null)
                 originSpot.ClearPlant();
+
             Destroy(gameObject);
         }
     }

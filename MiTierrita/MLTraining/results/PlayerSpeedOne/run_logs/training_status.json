@@ -1,4 +1,26 @@
 {
+    "CaterpillarAgent": {
+        "checkpoints": [
+            {
+                "steps": 9735,
+                "file_path": "results\\PlayerSpeedOne\\CaterpillarAgent\\CaterpillarAgent-9735.onnx",
+                "reward": -1.8943454537410216,
+                "creation_time": 1776827944.9881427,
+                "auxillary_file_paths": [
+                    "results\\PlayerSpeedOne\\CaterpillarAgent\\CaterpillarAgent-9735.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 9735,
+            "file_path": "results\\PlayerSpeedOne\\CaterpillarAgent.onnx",
+            "reward": -1.8943454537410216,
+            "creation_time": 1776827944.9881427,
+            "auxillary_file_paths": [
+                "results\\PlayerSpeedOne\\CaterpillarAgent\\CaterpillarAgent-9735.pt"
+            ]
+        }
+    },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "1.1.0",
