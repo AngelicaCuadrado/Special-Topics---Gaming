@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using Unity.AppUI.UI;
+using Unity.MLAgents;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
@@ -37,6 +39,12 @@ public class TomatoPlant : MonoBehaviour
 
     [SerializeField] private GameObject tomatoFruitPrefab;
 
+    [SerializeField] private bool AutoWater;
+
+    [HideInInspector] public PlantingSpot originSpot;
+
+    private PlantSpawner spawner;
+
     private void Awake()
     {
         interactable = GetComponent<XRSimpleInteractable>();
@@ -64,6 +72,8 @@ public class TomatoPlant : MonoBehaviour
 
     void Start()
     {
+        spawner = FindFirstObjectByType<PlantSpawner>();
+        if (Application.isPlaying && Academy.Instance.IsCommunicatorOn) AutoWater = true;
         UpdateGrowthStage();
         UpdateModel();
     }
@@ -84,7 +94,7 @@ public class TomatoPlant : MonoBehaviour
     {
         if (growth >= 100f) return;
 
-        if (currentWaterLevel > 0)
+        if (currentWaterLevel > 0 || AutoWater == true)
         {
             growth += growthRate * Time.deltaTime;
             growth = Mathf.Clamp(growth, 0f, 100f);
@@ -123,6 +133,8 @@ public class TomatoPlant : MonoBehaviour
     {
         if (growthStage == GrowthStage.Sapling || growthStage == GrowthStage.Green)
         {
+            if (originSpot != null)originSpot.ClearPlant();
+
             Destroy(gameObject);
             return;
         }
@@ -142,6 +154,8 @@ public class TomatoPlant : MonoBehaviour
             StartCoroutine(AttachNextFrame(interactor, grab));
         }
 
+        if (originSpot != null)
+            originSpot.ClearPlant();
         Destroy(gameObject);
     }
 
@@ -173,6 +187,11 @@ public class TomatoPlant : MonoBehaviour
         if (agent != null && growthStage >= GrowthStage.Sapling)
         {
             agent.AddReward(1.0f);
+            if (spawner != null)
+                spawner.SpawnPlant();
+
+            if (originSpot != null)
+                originSpot.ClearPlant();
             Destroy(gameObject);
         }
     }
