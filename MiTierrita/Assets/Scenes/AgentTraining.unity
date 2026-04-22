@@ -207,10 +207,18 @@ PrefabInstance:
     - target: {fileID: 3202770867096655633, guid: 339a77311ffbadd4e837f9a967849b63, type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5022602860645237092, guid: 1c0ec158d36ab8348a728ac28551880b, type: 3}
     - target: {fileID: 3202770867096655633, guid: 339a77311ffbadd4e837f9a967849b63, type: 3}
       propertyPath: m_BehaviorName
       value: CaterpillarAgent
+      objectReference: {fileID: 0}
+    - target: {fileID: 3202770867096655633, guid: 339a77311ffbadd4e837f9a967849b63, type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812827375892852280, guid: 339a77311ffbadd4e837f9a967849b63, type: 3}
+      propertyPath: TakeActionsBetweenDecisions
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6984230998127320081, guid: 339a77311ffbadd4e837f9a967849b63, type: 3}
       propertyPath: m_LocalPosition.x

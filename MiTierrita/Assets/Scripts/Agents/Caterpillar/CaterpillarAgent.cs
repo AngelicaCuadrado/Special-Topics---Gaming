@@ -19,6 +19,9 @@ public class CaterpillarAgent : Agent
     private TomatoPlant nearestPlant;
     private float previousDistance;
 
+    [Header("Debug")]
+    public TomatoPlant debugNearestPlant;
+
     public override void Initialize()
     {
         rb = GetComponent<Rigidbody>();
@@ -51,6 +54,7 @@ public class CaterpillarAgent : Agent
 
         // Nearest plant info
         nearestPlant = FindNearestRipePlant();
+        debugNearestPlant = nearestPlant;
         if (nearestPlant != null)
         {
             Vector3 dir = (nearestPlant.transform.localPosition - transform.localPosition).normalized;
