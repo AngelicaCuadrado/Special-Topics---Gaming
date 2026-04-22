@@ -6,15 +6,14 @@ public class UIManager : MonoBehaviour
     [Header("UI Canvas References")]
     [SerializeField] private GameObject tutorialCanvas;
     [SerializeField] private GameObject inGameCanvas;
+    [SerializeField] private GameObject pauseUI;
 
     [Header("Input Actions")]
-    [Tooltip("Bind to Left Controller Primary Button (e.g., X)")]
     [SerializeField] private InputActionReference tutorialAction;
-    [Tooltip("Bind to Left Controller Secondary Button (e.g., Y)")]
     [SerializeField] private InputActionReference inGameMenuAction;
+    [SerializeField] private InputActionReference pauseMenuAction;
 
     [Header("Tutorial Progression")]
-    [Tooltip("Assign the individual panels/steps of the tutorial here")]
     [SerializeField] private GameObject[] tutorialSteps;
 
     private int currentStepIndex = 0;
@@ -23,23 +22,52 @@ public class UIManager : MonoBehaviour
     {
         tutorialCanvas.SetActive(true);
         inGameCanvas.SetActive(false);
+        pauseUI.SetActive(false);
 
         if (tutorialSteps.Length > 0)
-        {
             ShowTutorialStep(0);
-        }
     }
 
     private void OnEnable()
     {
-        if (tutorialAction != null) tutorialAction.action.performed += OnTutorialPressed;
-        if (inGameMenuAction != null) inGameMenuAction.action.performed += OnInGameMenuPressed;
+        if (tutorialAction != null)
+        {
+            tutorialAction.action.Enable();
+            tutorialAction.action.performed += OnTutorialPressed;
+        }
+
+        if (inGameMenuAction != null)
+        {
+            inGameMenuAction.action.Enable();
+            inGameMenuAction.action.performed += OnInGameMenuPressed;
+        }
+
+        if (pauseMenuAction != null)
+        {
+            pauseMenuAction.action.Enable();
+            pauseMenuAction.action.performed += OnPauseMenuPressed;
+        }
     }
 
     private void OnDisable()
     {
-        if (tutorialAction != null) tutorialAction.action.performed -= OnTutorialPressed;
-        if (inGameMenuAction != null) inGameMenuAction.action.performed -= OnInGameMenuPressed;
+        if (tutorialAction != null)
+        {
+            tutorialAction.action.performed -= OnTutorialPressed;
+            tutorialAction.action.Disable();
+        }
+
+        if (inGameMenuAction != null)
+        {
+            inGameMenuAction.action.performed -= OnInGameMenuPressed;
+            inGameMenuAction.action.Disable();
+        }
+
+        if (pauseMenuAction != null)
+        {
+            pauseMenuAction.action.performed -= OnPauseMenuPressed;
+            pauseMenuAction.action.Disable();
+        }
     }
 
     private void OnTutorialPressed(InputAction.CallbackContext context)
@@ -48,9 +76,11 @@ public class UIManager : MonoBehaviour
         {
             tutorialCanvas.SetActive(true);
             inGameCanvas.SetActive(false);
+            pauseUI.SetActive(false);
             ShowTutorialStep(0);
             return;
         }
+
         currentStepIndex++;
 
         if (currentStepIndex >= tutorialSteps.Length)
@@ -71,6 +101,19 @@ public class UIManager : MonoBehaviour
         if (isActive)
         {
             tutorialCanvas.SetActive(false);
+            pauseUI.SetActive(false);
+        }
+    }
+
+    private void OnPauseMenuPressed(InputAction.CallbackContext context)
+    {
+        bool isActive = !pauseUI.activeSelf;
+        pauseUI.SetActive(isActive);
+
+        if (isActive)
+        {
+            tutorialCanvas.SetActive(false);
+            inGameCanvas.SetActive(false);
         }
     }
 
@@ -81,9 +124,7 @@ public class UIManager : MonoBehaviour
         for (int i = 0; i < tutorialSteps.Length; i++)
         {
             if (tutorialSteps[i] != null)
-            {
                 tutorialSteps[i].SetActive(i == currentStepIndex);
-            }
         }
     }
 }
