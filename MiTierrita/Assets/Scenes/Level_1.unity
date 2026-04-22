@@ -12114,6 +12114,11 @@ RectTransform:
   m_AnchoredPosition: {x: -7, y: -1346}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &826515136 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 257986376503455936, guid: a9c8b384a27cf9d4093827502c344ea2, type: 3}
+  m_PrefabInstance: {fileID: 4986563415866271894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &833907957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28438,7 +28443,7 @@ PrefabInstance:
     - target: {fileID: 2824301651546854925, guid: 339a77311ffbadd4e837f9a967849b63, type: 3}
       propertyPath: allowedArea
       value: 
-      objectReference: {fileID: 1221750350}
+      objectReference: {fileID: 826515136}
     - target: {fileID: 6984230998127320081, guid: 339a77311ffbadd4e837f9a967849b63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.66074
@@ -28614,7 +28619,6 @@ SceneRoots:
   - {fileID: 1351742821}
   - {fileID: 2156129293689616551}
   - {fileID: 1647406691}
-  - {fileID: 1458377058}
   - {fileID: 1032640976}
   - {fileID: 2125216720}
   - {fileID: 1091488182}
@@ -28627,3 +28631,5 @@ SceneRoots:
   - {fileID: 572199730}
   - {fileID: 193204775}
   - {fileID: 495046294}
+  - {fileID: 5468451393399288801}
+  - {fileID: 4986563415866271894}
