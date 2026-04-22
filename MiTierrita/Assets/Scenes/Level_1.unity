@@ -986,63 +986,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8365948453647883179, guid: 3e07e977acab70542ad2c54830ad725f, type: 3}
   m_PrefabInstance: {fileID: 40488233}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &53172601
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8235706722405511922, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_Name
-      value: Tomato (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.5174723
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.2399964
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.711
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9169637841393457253, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
 --- !u!1 &57626974
 GameObject:
   m_ObjectHideFlags: 0
@@ -9843,7 +9786,7 @@ MonoBehaviour:
   trucksGoalText: {fileID: 184312011}
   gameOverUI: {fileID: 1363140136}
   winUI: {fileID: 143982585}
-  dayDurationInSeconds: 120
+  dayDurationInSeconds: 200
   sunRotationSpeed: -45
   trucksGoal: 1
 --- !u!1001 &661932408
@@ -28653,7 +28596,6 @@ SceneRoots:
   - {fileID: 1059006304}
   - {fileID: 1467706116}
   - {fileID: 29522332}
-  - {fileID: 53172601}
   - {fileID: 1584391879}
   - {fileID: 572199730}
   - {fileID: 193204775}
