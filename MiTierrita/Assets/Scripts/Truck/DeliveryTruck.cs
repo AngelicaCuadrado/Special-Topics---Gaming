@@ -6,13 +6,12 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class DeliveryTruck : MonoBehaviour
 {
     [Header("Sockets Configuration")]
-    [Tooltip("Arrastra aquí los 4 XR Socket Interactors que están en la parte trasera del camión")]
     public XRSocketInteractor[] basketSockets;
 
-    [Header("Movement Configuration")]
+    [Header("Movement & Audio")]
     public float moveSpeed = 3f;
-    [Tooltip("Dirección hacia la que se moverá el camión (Local)")]
-    public Vector3 moveDirection = Vector3.forward;
+    public Vector3 moveDirection = new Vector3(-1, 0, 0);
+    [SerializeField] private AudioSource truckStartAudio;
 
     private bool isFullAndMoving = false;
 
@@ -62,6 +61,10 @@ public class DeliveryTruck : MonoBehaviour
     private void StartMoving()
     {
         isFullAndMoving = true;
+        if (truckStartAudio != null)
+        {
+            truckStartAudio.Play();
+        }
     }
 
     void Update()
