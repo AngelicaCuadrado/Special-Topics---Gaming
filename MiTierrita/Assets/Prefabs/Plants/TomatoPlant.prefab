@@ -54,6 +54,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TomatoPlant
   growth: 0
   growthRate: 5
+  _seedParticlePrefab: {fileID: 0}
+  _particleSpawnPoint: {fileID: 0}
   currentWaterLevel: 0
   maxWaterLevel: 100
   waterDepletionRate: 2
@@ -65,6 +67,8 @@ MonoBehaviour:
   - {fileID: 5644831206356699813}
   - {fileID: 4817297024623616651}
   tomatoFruitPrefab: {fileID: 8235706722405511922, guid: 23e4fc02a9d6f3a4ab11ad5ddde4b335, type: 3}
+  AutoWater: 0
+  originSpot: {fileID: 0}
 --- !u!136 &6221122361876109210
 CapsuleCollider:
   m_ObjectHideFlags: 0

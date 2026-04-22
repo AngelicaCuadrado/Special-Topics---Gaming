@@ -1,0 +1,65 @@
+{
+    "CaterpillarAgent": {
+        "checkpoints": [
+            {
+                "steps": 499984,
+                "file_path": "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-499984.onnx",
+                "reward": -1.737055490159581,
+                "creation_time": 1776832696.4258776,
+                "auxillary_file_paths": [
+                    "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-499984.pt"
+                ]
+            },
+            {
+                "steps": 999994,
+                "file_path": "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-999994.onnx",
+                "reward": -1.502577141862074,
+                "creation_time": 1776835891.166197,
+                "auxillary_file_paths": [
+                    "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-999994.pt"
+                ]
+            },
+            {
+                "steps": 1499998,
+                "file_path": "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-1499998.onnx",
+                "reward": -1.3948351080720789,
+                "creation_time": 1776839036.8613586,
+                "auxillary_file_paths": [
+                    "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-1499998.pt"
+                ]
+            },
+            {
+                "steps": 1999971,
+                "file_path": "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-1999971.onnx",
+                "reward": -1.3456458202926032,
+                "creation_time": 1776841659.964465,
+                "auxillary_file_paths": [
+                    "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-1999971.pt"
+                ]
+            },
+            {
+                "steps": 2000001,
+                "file_path": "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-2000001.onnx",
+                "reward": -1.3454288354391655,
+                "creation_time": 1776841660.0009348,
+                "auxillary_file_paths": [
+                    "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-2000001.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2000001,
+            "file_path": "results\\TestRun\\CaterpillarAgent.onnx",
+            "reward": -1.3454288354391655,
+            "creation_time": 1776841660.0009348,
+            "auxillary_file_paths": [
+                "results\\TestRun\\CaterpillarAgent\\CaterpillarAgent-2000001.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.2.2+cpu"
+    }
+}
