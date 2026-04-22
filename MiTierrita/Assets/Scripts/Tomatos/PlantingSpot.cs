@@ -21,5 +21,6 @@ public class PlantingSpot : MonoBehaviour
             GameObject newPlant = Instantiate(plantPrefab, transform.position, Quaternion.identity);
             currentPlant = newPlant.GetComponent<TomatoPlant>();
         }
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.plantingSound);
     }
 }

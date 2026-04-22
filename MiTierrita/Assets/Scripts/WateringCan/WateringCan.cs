@@ -14,6 +14,7 @@ public class WateringCan : MonoBehaviour
     public XRGrabInteractable grabInteractable;
     public ParticleSystem waterParticles;
     public GameObject waterHitbox;
+    public AudioSource waterAudio;
 
     [Header("UI del Objeto")]
     public GameObject uiCanvas;
@@ -26,6 +27,8 @@ public class WateringCan : MonoBehaviour
         currentCapacity = maxCapacity;
         uiCanvas.SetActive(false);
         waterHitbox.SetActive(false);
+
+        if (waterAudio != null) waterAudio.Stop();
 
         if (grabInteractable == null)
             grabInteractable = GetComponent<XRGrabInteractable>();
@@ -47,6 +50,9 @@ public class WateringCan : MonoBehaviour
             isWatering = true;
             waterParticles.Play();
             waterHitbox.SetActive(true);
+
+            if (waterAudio != null && !waterAudio.isPlaying)
+                waterAudio.Play();
         }
     }
 
@@ -55,6 +61,9 @@ public class WateringCan : MonoBehaviour
         isWatering = false;
         waterParticles.Stop();
         waterHitbox.SetActive(false);
+
+        if (waterAudio != null)
+            waterAudio.Stop();
     }
 
     private void HandleCooldownAndRecharge()

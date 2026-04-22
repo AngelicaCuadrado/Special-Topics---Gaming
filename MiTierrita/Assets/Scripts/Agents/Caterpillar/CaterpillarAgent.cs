@@ -30,7 +30,7 @@ public class CaterpillarAgent : Agent
         // Randomize agent position
         transform.localPosition = new Vector3(
             Random.Range(-arenaSize * 0.8f, arenaSize * 0.8f),
-            0,
+            1,
             Random.Range(-arenaSize * 0.8f, arenaSize * 0.8f)
         );
 
