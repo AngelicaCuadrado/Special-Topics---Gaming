@@ -2,22 +2,22 @@
     "CaterpillarAgent": {
         "checkpoints": [
             {
-                "steps": 4292,
-                "file_path": "results\\NewWormRun1\\CaterpillarAgent\\CaterpillarAgent-4292.onnx",
-                "reward": -13.023798043529192,
-                "creation_time": 1776819827.5700989,
+                "steps": 3844,
+                "file_path": "results\\NewWormRun1\\CaterpillarAgent\\CaterpillarAgent-3844.onnx",
+                "reward": -5.56743072611945,
+                "creation_time": 1776820644.759522,
                 "auxillary_file_paths": [
-                    "results\\NewWormRun1\\CaterpillarAgent\\CaterpillarAgent-4292.pt"
+                    "results\\NewWormRun1\\CaterpillarAgent\\CaterpillarAgent-3844.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 4292,
+            "steps": 3844,
             "file_path": "results\\NewWormRun1\\CaterpillarAgent.onnx",
-            "reward": -13.023798043529192,
-            "creation_time": 1776819827.5700989,
+            "reward": -5.56743072611945,
+            "creation_time": 1776820644.759522,
             "auxillary_file_paths": [
-                "results\\NewWormRun1\\CaterpillarAgent\\CaterpillarAgent-4292.pt"
+                "results\\NewWormRun1\\CaterpillarAgent\\CaterpillarAgent-3844.pt"
             ]
         }
     },
