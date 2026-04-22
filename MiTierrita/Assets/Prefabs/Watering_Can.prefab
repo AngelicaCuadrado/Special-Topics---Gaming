@@ -4952,6 +4952,7 @@ GameObject:
   - component: {fileID: 1535059657608684887}
   - component: {fileID: 3687695029312191490}
   - component: {fileID: 3262866516682329765}
+  - component: {fileID: 7768681166082865452}
   m_Layer: 0
   m_Name: Watering_Can
   m_TagString: Untagged
@@ -5329,6 +5330,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7768681166082865452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6947579135171511906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01157c7953f12544876f7348ec70e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabTransparency
+  targetRenderers:
+  - {fileID: 8892988694890276791}
+  normalMaterial: {fileID: 2100000, guid: 003570a65ef8a814a8ad41fc7fbb9c9b, type: 2}
+  transparentMaterial: {fileID: 2100000, guid: d6b02b2f7a374c44cb198d52d8cab325, type: 2}
+  normalAlpha: 1
+  grabbedAlpha: 0.35
+  fadeSpeed: 6
 --- !u!1 &7751610436589531679
 GameObject:
   m_ObjectHideFlags: 0
