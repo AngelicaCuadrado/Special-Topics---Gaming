@@ -1,9 +1,12 @@
 using System;
 using System.Collections;
+using Unity.AppUI.UI;
+using Unity.MLAgents;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
+
 public enum GrowthStage
 {
     Seed,
@@ -17,20 +20,34 @@ public class TomatoPlant : MonoBehaviour
 {
     [Header("Growth Settings")]
     [SerializeField] private float growth = 0f;
-    [SerializeField] private float growthRate = 5f;      // growth per second
+    [SerializeField] private float growthRate = 5f;
+
+    [Header("Particle System")]
+    [SerializeField] private ParticleSystem _seedParticlePrefab;
+    [SerializeField] private Transform _particleSpawnPoint;
+
+    [Header("Water Settings")]
+    public float currentWaterLevel = 0f;
+    public float maxWaterLevel = 100f;
+    public float waterDepletionRate = 2f;
 
     public GrowthStage growthStage;
 
     public bool IsRipeEnough => growthStage >= GrowthStage.Sapling;
 
     [Header("Models (Order matters)")]
-    // 0 = Seed, 1 = Sprout, 2 = Sapling, 3 = Green, 4 = Ripe
     public GameObject[] models;
 
     private GrowthStage previousStage;
     private XRSimpleInteractable interactable;
 
     [SerializeField] private GameObject tomatoFruitPrefab;
+
+    [SerializeField] private bool AutoWater;
+
+    [HideInInspector] public PlantingSpot originSpot;
+
+    private PlantSpawner spawner;
 
     private void Awake()
     {
@@ -51,7 +68,7 @@ public class TomatoPlant : MonoBehaviour
     {
         XRBaseInteractor interactor = args.interactorObject as XRBaseInteractor;
 
-        if(interactor != null)
+        if (interactor != null)
         {
             Harvest(interactor);
         }
@@ -59,18 +76,33 @@ public class TomatoPlant : MonoBehaviour
 
     void Start()
     {
+        spawner = FindFirstObjectByType<PlantSpawner>();
+        if (Application.isPlaying && Academy.Instance.IsCommunicatorOn) AutoWater = true;
         UpdateGrowthStage();
         UpdateModel();
+        previousStage = growthStage;
+
+        if (growthStage == GrowthStage.Seed)
+        {
+            PlaySeedParticle();
+        }
     }
 
     void Update()
     {
+
         HandleGrowth();
         UpdateGrowthStage();
 
         if (growthStage != previousStage)
         {
             UpdateModel();
+
+            if (growthStage == GrowthStage.Seed)
+            {
+                PlaySeedParticle();
+            }
+
             previousStage = growthStage;
         }
     }
@@ -79,8 +111,13 @@ public class TomatoPlant : MonoBehaviour
     {
         if (growth >= 100f) return;
 
-        growth += growthRate * Time.deltaTime;
-        growth = Mathf.Clamp(growth, 0f, 100f);
+        if (currentWaterLevel > 0 || AutoWater == true)
+        {
+            growth += growthRate * Time.deltaTime;
+            growth = Mathf.Clamp(growth, 0f, 100f);
+            currentWaterLevel -= waterDepletionRate * Time.deltaTime;
+            if (currentWaterLevel < 0) currentWaterLevel = 0;
+        }
     }
 
     private void UpdateGrowthStage()
@@ -99,21 +136,28 @@ public class TomatoPlant : MonoBehaviour
 
     private void UpdateModel()
     {
-        // Disable all models first
         for (int i = 0; i < models.Length; i++)
         {
-            models[i].SetActive(false);
+            if (models[i] != null)
+                models[i].SetActive(false);
         }
 
-        // Enable the correct one
-        models[(int)growthStage].SetActive(true);
+        if (models[(int)growthStage] != null)
+            models[(int)growthStage].SetActive(true);
     }
 
     public void Harvest(XRBaseInteractor interactor)
     {
+        if (growthStage == GrowthStage.Sapling || growthStage == GrowthStage.Green)
+        {
+            if (originSpot != null)originSpot.ClearPlant();
+
+            Destroy(gameObject);
+            return;
+        }
+
         if (growthStage != GrowthStage.Ripe) return;
 
-        // Spawn fruit at hand position
         GameObject fruit = Instantiate(
             tomatoFruitPrefab,
             interactor.transform.position,
@@ -127,13 +171,14 @@ public class TomatoPlant : MonoBehaviour
             StartCoroutine(AttachNextFrame(interactor, grab));
         }
 
-        // Destroy AFTER scheduling grab
+        if (originSpot != null)
+            originSpot.ClearPlant();
         Destroy(gameObject);
     }
 
     private IEnumerator AttachNextFrame(XRBaseInteractor interactor, XRGrabInteractable grab)
     {
-        yield return null; // wait one frame
+        yield return null;
 
         var manager = grab.interactionManager;
 
@@ -146,14 +191,38 @@ public class TomatoPlant : MonoBehaviour
         }
     }
 
+    public void AddWater(float amount)
+    {
+        currentWaterLevel += amount;
+        currentWaterLevel = Mathf.Clamp(currentWaterLevel, 0f, maxWaterLevel);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         CaterpillarAgent agent = other.GetComponent<CaterpillarAgent>();
 
         if (agent != null && growthStage >= GrowthStage.Sapling)
         {
-            agent.AddReward(1.0f); // reward for eating
+            agent.AddReward(1.0f);
+            if (spawner != null)
+                spawner.SpawnPlant();
+
+            if (originSpot != null)
+                originSpot.ClearPlant();
             Destroy(gameObject);
         }
+    }
+
+
+    private void PlaySeedParticle() 
+    {
+        if (_seedParticlePrefab == null) return;
+
+        // position of the particle system will be either the specified spawn point or the plant's position
+        Vector3 pos = _particleSpawnPoint != null ? _particleSpawnPoint.position : transform.position;
+        
+        // instantiate the particle system at the determined position
+        ParticleSystem ps = Instantiate(_seedParticlePrefab, pos, Quaternion.identity);
+        Destroy(ps.gameObject, 2f);
     }
 }

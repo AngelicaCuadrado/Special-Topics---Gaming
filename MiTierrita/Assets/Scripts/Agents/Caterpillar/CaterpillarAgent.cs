@@ -12,7 +12,9 @@ public class CaterpillarAgent : Agent
     [Header("Environment")]
     public Transform player;
     public LayerMask plantLayer;
-    public float arenaSize = 6f;
+
+    [Header("Allowed Area")]
+    public BoxCollider allowedArea;
 
     private TomatoPlant nearestPlant;
     private float previousDistance;
@@ -24,17 +26,11 @@ public class CaterpillarAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        // Reset velocity
         rb.linearVelocity = Vector3.zero;
 
-        // Randomize agent position
-        transform.localPosition = new Vector3(
-            Random.Range(-arenaSize * 0.8f, arenaSize * 0.8f),
-            0,
-            Random.Range(-arenaSize * 0.8f, arenaSize * 0.8f)
-        );
+        // Spawn inside allowed area
+        transform.localPosition = GetRandomPointInsideArea();
 
-        // Find nearest plant at start
         nearestPlant = FindNearestRipePlant();
         previousDistance = nearestPlant != null
             ? Vector3.Distance(transform.localPosition, nearestPlant.transform.localPosition)
@@ -43,20 +39,23 @@ public class CaterpillarAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        // Agent position (3)
+        // Agent position
         sensor.AddObservation(transform.localPosition);
 
-        // Player position (3)
+        // Player position
         sensor.AddObservation(player.localPosition);
 
-        // Nearest plant direction (3)
+        // Distance to player (helps avoidance)
+        float playerDist = Vector3.Distance(transform.localPosition, player.localPosition);
+        sensor.AddObservation(playerDist);
+
+        // Nearest plant info
         nearestPlant = FindNearestRipePlant();
         if (nearestPlant != null)
         {
             Vector3 dir = (nearestPlant.transform.localPosition - transform.localPosition).normalized;
             sensor.AddObservation(dir);
 
-            // Distance to plant (1)
             float dist = Vector3.Distance(transform.localPosition, nearestPlant.transform.localPosition);
             sensor.AddObservation(dist);
         }
@@ -73,38 +72,96 @@ public class CaterpillarAgent : Agent
         Vector3 move = new Vector3(actions.ContinuousActions[0], 0, actions.ContinuousActions[1]);
         rb.linearVelocity = move * moveSpeed;
 
-        // Time penalty (encourages faster completion)
+        // Time penalty
         AddReward(-0.0005f);
 
-        // Bounds check
-        if (Mathf.Abs(transform.localPosition.x) > arenaSize ||
-            Mathf.Abs(transform.localPosition.z) > arenaSize)
+        // Boundary avoidance
+        if (!IsInsideAllowedArea(transform.localPosition))
         {
             AddReward(-1f);
             EndEpisode();
             return;
         }
 
-        // Reward for approaching plant
+        float distToEdge = DistanceToAreaEdge(transform.localPosition);
+        AddReward(-Mathf.Clamp01(1f - distToEdge / 3f) * 0.001f);
+
+        // Player avoidance shaping
+        float playerDist = Vector3.Distance(transform.localPosition, player.localPosition);
+
+        // Reward staying far from player
+        AddReward(Mathf.Clamp(playerDist / 10f, 0f, 1f) * 0.001f);
+
+        // Punish getting too close
+        if (playerDist < 2f)
+            AddReward(-0.01f);
+
+        // Plant seeking
         if (nearestPlant != null)
         {
             float newDistance = Vector3.Distance(transform.localPosition, nearestPlant.transform.localPosition);
             float diff = previousDistance - newDistance;
 
-            // Reward moving closer, punish moving away
             AddReward(diff * 0.1f);
-
             previousDistance = newDistance;
 
-            // Reached plant
             if (newDistance < 0.5f)
             {
                 AddReward(2f);
                 EndEpisode();
             }
         }
+        else
+        {
+            // No plant available encourage staying near center
+            Vector3 center = allowedArea.center + allowedArea.transform.localPosition;
+            float distFromCenter = Vector3.Distance(transform.localPosition, center);
+            AddReward(-distFromCenter * 0.0005f);
+        }
     }
 
+    // ---------------------------------------------------------
+    // AREA HELPERS
+    // ---------------------------------------------------------
+
+    private Vector3 GetRandomPointInsideArea()
+    {
+        Vector3 center = allowedArea.center + allowedArea.transform.localPosition;
+        Vector3 size = allowedArea.size * 0.5f;
+
+        return new Vector3(
+            Random.Range(center.x - size.x, center.x + size.x),
+            0.75f,
+            Random.Range(center.z - size.z, center.z + size.z)
+        );
+    }
+
+    private bool IsInsideAllowedArea(Vector3 pos)
+    {
+        Vector3 center = allowedArea.center + allowedArea.transform.localPosition;
+        Vector3 size = allowedArea.size * 0.5f;
+
+        return
+            pos.x >= center.x - size.x &&
+            pos.x <= center.x + size.x &&
+            pos.z >= center.z - size.z &&
+            pos.z <= center.z + size.z;
+    }
+
+    private float DistanceToAreaEdge(Vector3 pos)
+    {
+        Vector3 center = allowedArea.center + allowedArea.transform.localPosition;
+        Vector3 size = allowedArea.size * 0.5f;
+
+        float dx = size.x - Mathf.Abs(pos.x - center.x);
+        float dz = size.z - Mathf.Abs(pos.z - center.z);
+
+        return Mathf.Min(dx, dz);
+    }
+
+    // ---------------------------------------------------------
+    // PLANT SEARCH
+    // ---------------------------------------------------------
 
     private TomatoPlant FindNearestRipePlant()
     {

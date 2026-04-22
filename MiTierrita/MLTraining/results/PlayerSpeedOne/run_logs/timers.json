@@ -1,0 +1,47 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1776825882",
+        "python_version": "3.10.12 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 19:01:18) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\plati\\miniconda3\\envs\\mlagentsGood\\Scripts\\mlagents-learn config.yaml --run-id=PlayerSpeedOne",
+        "mlagents_version": "1.1.0",
+        "mlagents_envs_version": "1.1.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.2.2+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1776825898"
+    },
+    "total": 15.88490209999145,
+    "count": 1,
+    "self": 0.012931300007039681,
+    "children": {
+        "run_training.setup": {
+            "total": 0.07606789999408647,
+            "count": 1,
+            "self": 0.07606789999408647
+        },
+        "TrainerController.start_learning": {
+            "total": 15.795902899990324,
+            "count": 1,
+            "self": 0.000584400026127696,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 15.795298799988814,
+                    "count": 1,
+                    "self": 15.795298799988814
+                },
+                "trainer_threads": {
+                    "total": 2.4999899324029684e-06,
+                    "count": 1,
+                    "self": 2.4999899324029684e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 1.719998545013368e-05,
+                    "count": 1,
+                    "self": 1.719998545013368e-05
+                }
+            }
+        }
+    }
+}
