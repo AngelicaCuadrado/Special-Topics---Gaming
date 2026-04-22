@@ -1,8 +1,8 @@
 behaviors:
   CaterpillarAgent:
     trainer_type: ppo
-    max_steps: 1_000_000
-    time_horizon: 64
+    max_steps: 2_000_000
+    time_horizon: 128
     summary_freq: 50000
 
     network_settings:
