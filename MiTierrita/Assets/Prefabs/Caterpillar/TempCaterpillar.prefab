@@ -170,6 +170,7 @@ MonoBehaviour:
   plantLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+  allowedArea: {fileID: 0}
 --- !u!54 &3350006507104039993
 Rigidbody:
   m_ObjectHideFlags: 0

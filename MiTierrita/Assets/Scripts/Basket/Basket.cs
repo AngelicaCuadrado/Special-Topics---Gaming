@@ -35,8 +35,13 @@ public class Basket : MonoBehaviour
                 fillStages[currentTomatoCount].SetActive(true);
                 currentTomatoCount += droppedFruit.value;
                 Destroy(other.gameObject);
+
+                if (GameManager.Instance != null) GameManager.Instance.AddTomatoScore();
+
                 if (currentTomatoCount >= maxTomatoes)
                 {
+                    if (GameManager.Instance != null) GameManager.Instance.BasketFilledScore();
+
                     Rigidbody rbPadre = GetComponentInParent<Rigidbody>();
                     if (rbPadre != null)
                     {

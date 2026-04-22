@@ -7,38 +7,37 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("UI Time References")]
-    [Tooltip("Drag the SunIcon RectTransform here")]
     [SerializeField] private RectTransform sunIcon;
-    [Tooltip("Drag the TimeBarFill Image here")]
     [SerializeField] private Image timeBarFill;
 
     [Header("UI Stats References")]
-    [Tooltip("Drag the TextMeshPro UI for Score here")]
     [SerializeField] private TextMeshProUGUI scoreText;
-    [Tooltip("Drag the TextMeshPro UI for Worms Killed here")]
     [SerializeField] private TextMeshProUGUI wormsKilledText;
-    [Tooltip("Drag the Game Over Panel/Canvas here")]
-    [SerializeField] private GameObject gameOverUI;
+    [Tooltip("UI Text for Trucks Filled (e.g., Trucks: 0/1)")]
+    [SerializeField] private TextMeshProUGUI trucksGoalText;
 
-    [Header("Settings")]
-    [SerializeField] private float dayDurationInSeconds = 120f;
+    [Header("UI Panels")]
+    [SerializeField] private GameObject gameOverUI;
+    [Tooltip("Drag the Win Game Panel/Canvas here")]
+    [SerializeField] private GameObject winUI;
+
+    [Header("Settings & Goals")]
+    [SerializeField] private float dayDurationInSeconds = 200f;
     [SerializeField] private float sunRotationSpeed = -45f;
+    [Tooltip("How many trucks need to be filled to win the level?")]
+    [SerializeField] private int trucksGoal = 1;
+
 
     private float currentTime;
     private int totalScore = 0;
     private int wormsKilled = 0;
+    private int trucksFilled = 0;
     private bool isGameOver = false;
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
     void Start()
@@ -48,6 +47,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
 
         if (gameOverUI != null) gameOverUI.SetActive(false);
+        if (winUI != null) winUI.SetActive(false);
 
         UpdateUI();
     }
@@ -56,65 +56,55 @@ public class GameManager : MonoBehaviour
     {
         if (isGameOver) return;
 
-        if (sunIcon != null)
-        {
-            sunIcon.Rotate(0, 0, sunRotationSpeed * Time.deltaTime);
-        }
+        if (sunIcon != null) sunIcon.Rotate(0, 0, sunRotationSpeed * Time.deltaTime);
+
         if (currentTime > 0)
         {
             currentTime -= Time.deltaTime;
+            if (timeBarFill != null) timeBarFill.fillAmount = currentTime / dayDurationInSeconds;
 
-            if (timeBarFill != null)
-            {
-                timeBarFill.fillAmount = currentTime / dayDurationInSeconds;
-            }
-            if (currentTime <= 0)
-            {
-                EndDay();
-            }
+            if (currentTime <= 0) EndDay(false);
         }
     }
 
-    public void AddTomatoScore()
-    {
-        totalScore += 20;
-        UpdateUI();
-    }
 
-    public void BasketFilledScore()
-    {
-        totalScore += 15;
-        UpdateUI();
-    }
+    public void AddTomatoScore() { totalScore += 20; UpdateUI(); }
+    public void BasketFilledScore() { totalScore += 15; UpdateUI(); }
+    public void CaterpillarKilledScore() { totalScore += 10; wormsKilled++; UpdateUI(); }
 
-    public void TruckDeliveryScore()
+    public void TruckDispatched()
     {
         totalScore += 50;
+        trucksFilled++;
         UpdateUI();
-    }
 
-    public void CaterpillarKilledScore()
-    {
-        totalScore += 10;
-        wormsKilled++;
-        UpdateUI();
+        //if (trucksFilled >= trucksGoal)
+        //{
+        //    EndDay(true);
+        //}
     }
-
 
     private void UpdateUI()
     {
-        if (scoreText != null) scoreText.text = "Score: " + totalScore;
-        if (wormsKilledText != null) wormsKilledText.text = "Worms: " + wormsKilled;
+        if (scoreText != null) scoreText.text = "" + totalScore;
+        if (wormsKilledText != null) wormsKilledText.text = "" + wormsKilled;
+        if (trucksGoalText != null) trucksGoalText.text = "" + trucksFilled + " / " + trucksGoal;
     }
 
-    private void EndDay()
+    private void EndDay(bool didWin)
     {
         isGameOver = true;
-        currentTime = 0;
-
-        if (timeBarFill != null) timeBarFill.fillAmount = 0;
-        if (gameOverUI != null) gameOverUI.SetActive(true);
-
         Time.timeScale = 0f;
+
+        if (didWin)
+        {
+            if (winUI != null) winUI.SetActive(true);
+        }
+        else
+        {
+            currentTime = 0;
+            if (timeBarFill != null) timeBarFill.fillAmount = 0;
+            if (gameOverUI != null) gameOverUI.SetActive(true);
+        }
     }
 }
